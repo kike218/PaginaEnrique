@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hombres en Tecnología</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="nav-icon">
+            <div class="bar"></div>
+        </label>
+        <ul class="nav-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Directrices</a></li>
+            <li><a href="#">Contáctanos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero-section">
+            <div class="hero-text">
+                <h1>Hombres en Tecnología</h1>
+                <h2>Empoderando el Futuro</h2>
+            </div>
+            <button class="scroll-btn hero-scroll" id="scroll-down-btn">
+                <img src="ico-scroll-down.svg" alt="Desplazarse hacia abajo">
+            </button>
+        </section>
+        <section class="date-section">
+            <p class="date">01/02/2021</p>
+            <p class="headline">Hombres en Tecnología</p>
+        </section>
+        <section class="main-content">
+            <article class="frontend-advice">
+                <h3>Consejos de Frontend</h3>
+                <h2>Trucos y Técnicas</h2>
+                <p>Descubre consejos y trucos esenciales para el desarrollo frontend, mejorando tus habilidades y productividad.</p>
+                <button>Aprender Más</button>
+            </article>
+            <article class="reasons-list">
+                <h3>Top 3 Razones</h3>
+                <div class="reasons-wrapper">
+                    <div class="reason-item">
+                        <h4>Oportunidades de Crecimiento</h4>
+                        <p>Explora las vastas oportunidades de crecimiento en la industria tecnológica.</p>
+                    </div>
+                    <div class="reason-item">
+                        <h4>Campo Innovador</h4>
+                        <p>Está a la vanguardia de la innovación y los avances tecnológicos.</p>
+                    </div>
+                    <div class="reason-item">
+                        <h4>Apoyo Comunitario</h4>
+                        <p>Únete a una comunidad de apoyo con personas de ideas afines.</p>
+                    </div>
+                </div>
+                <button>Más Razones</button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <button class="scroll-btn footer-scroll" id="scroll-up-btn">
+            <img src="ico-arrow.svg" alt="Desplazarse hacia arriba">
+        </button>
+        <p>©2021 Nosotros amamos Desarrollar</p>
+    </footer>
+    <script>
+        document.getElementById('scroll-down-btn').addEventListener('click', function() {
+            window.scrollBy({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+        });
+
+        document.getElementById('scroll-up-btn').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
